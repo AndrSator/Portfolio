@@ -1,0 +1,233 @@
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Custom Font */
+/* http://tenbytwenty.com/?xxxx_posts=nevis */
+@font-face {
+	font-family: 'Nevis';
+	src: url('nevis.ttf');
+}
+
+body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf}
+p		{line-height:1.6;}
+hr		{border-style: solid; border-color:#bfbfbf;}
+
+header		{height:216px; background-color:#2d2d2d}
+header img	{float:left; margin:14px; margin-left: 100px;}
+
+#avatar	{
+	height: 144px;
+	width: 144px;
+	background: url(../img/avatar.png);
+	background-size: cover;
+	position: absolute;
+	margin: 36px 72px 36px 72px;
+}
+
+header h1		{margin-left:252px; float:left; font-size:20px; line-height:100px;}
+
+section	{
+	height: 1000px;
+	position:relative;
+	width:100% !important;
+	min-width:1000px;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+a						{color:#bfbfbf; text-decoration:none;}
+section h1, section h1>a	{width:300px; font-size:65px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section p					{color:#4f4f4f; width:300px;}
+section article				{position:absolute; top:100px; left:100px; width:300px; height:800px; z-index:4;}
+section article p			{text-align: justify;}
+
+#menu {
+    position: fixed;
+    top: 30%;
+    right: 0;
+	width: 25px;
+	z-index: 10;
+}
+
+#menu div{
+	background: rgba(0,0,0,0.5);
+	height: 64px;
+	width: 45px;
+	float: right;
+	color: transparent;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	transition: width .5s;
+	border-left: 4px solid #494949;
+}
+
+#menu div:hover{
+	width: 120px;
+	color: #bfbfbf;
+	font: 18px bold, Arial;
+	line-height: 64px !IMPORTANT;
+}
+
+#menu #menu_main:hover{border-color:#ebc055}
+#menu #menu_RETF2:hover{border-color:#bf3d3d}
+#menu #menu_onlinesdk:hover{border-color:#bfbfbf}
+#menu #menu_steamcmd-gui:hover{border-color: #4078c0}
+#menu #menu_works:hover{border-color:}
+#menu #menu_contact:hover{border-color:}
+
+#menu_steamcmd-gui {font: 14px bold, Arial !IMPORTANT}
+
+#Main	{
+	background: #e0e0e0;
+	background: url(../img/background/asd.png) fixed;
+	color: black;
+	margin:0;
+	top:0;
+	left:0;
+	width:100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+#RETF2	{
+	background:url(../img/ee22/retf2_soldier.png) fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+}
+/* MODEL
+#retf2	{
+	background: url(../img/retf2_model.png) fixed;
+	margin:0;
+	top:0px;
+	left:100px;
+	width:100%;
+}
+*/
+section#RETF2 a h1		{color:#bfbfbf;}
+section#RETF2 a		{color:#bf3d3d;}
+section#RETF2 p		{color:#c0c0c0;}
+
+/* Switch */
+input#checkbox {display: none}
+input#checkbox:checked ~ div#A		{display:none}
+input#checkbox:checked ~ div#B		{display:block}
+input#checkbox:checked ~ label.scrollbutton {border-top: 4px solid #494949}
+
+input#checkbox:not(:checked) ~ div#A	{display:block}
+input#checkbox:not(:checked) ~ div#B	{display:none}
+input#checkbox:not(:checked) ~ label.scrollbutton {border-bottom: 4px solid #494949}
+
+label.scrollbutton {
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+	display:block;
+	width:100%;
+	height: 35px;
+	background-color: rgba(0,0,0,.25);
+}
+
+label.scrollbutton:hover {
+	border-color: #bf3d3d !IMPORTANT;
+}
+
+#OnlineSDK	{
+	background-color: #101010;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	-webkit-box-shadow: inset 500px 0px 0px 0px #1c1c1c;
+	-moz-box-shadow: inset 500px 0px 0px 0px #1c1c1c;
+	box-shadow: inset 500px 0px 0px 0px #1c1c1c;
+}
+
+#SteamCMD-GUI {
+	background: #9c9c9c;
+}
+
+#Gallery {
+	background: #b4b4b4;
+}
+
+#Contact {
+	height: 900px !IMPORTANT;
+	background: #e8e8e8;
+}
+
+#Footer {
+	height: 90px !IMPORTANT;
+	background: green;
+}
+
+div.gallery-container {
+	width: 1520px;
+	min-height: 725px;
+	margin: 0 auto;
+	overflow: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+ 
+div.img {
+	float: left;
+	margin: 10px;
+	width: 360px;
+	height: 200px;
+	background-size: 100% !IMPORTANT;
+}
+
+div.gallery-container-small {
+	background-color: rgba(0,0,0,0.25);
+	width: 292px;
+	margin: 12px 0px 0px 0px;
+	padding: 4px;
+}
+
+div.img-small {
+	float:left;
+	margin: 3px;
+	width: 140px;
+	height: 78px;
+	background-size: 100% !IMPORTANT;
+}
+
+.other {
+	color: #d8d8d8;
+	width:100%;
+}
+
+.contact {
+	color: #494949;
+	margin:100px 0px 100px 169px;
+	width:100%;
+}
+
+.socialmedia {
+	height: 216px;
+	background: #f2f2f2;
+}
+
+iframe {
+	position: absolute;
+	margin-left: 500px;
+	width: 75%;
+	height: 100%;	
+	z-index: 1;
+}
+
+.render			{background : url(../img/ee22/retf2_soldier.png) fixed !IMPORTANT;}
+.concept_art	{background : url(../img/ee22/concept_art_ee22_medal.png) fixed !IMPORTANT;}
+.medals			{background : url(../img/ee22/hlmv_medals.png) fixed !IMPORTANT;}
+.ingame			{background : url(../img/ee22/ingame_screenshot.png) fixed !IMPORTANT;}
