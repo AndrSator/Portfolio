@@ -1,57 +1,106 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Portfolio by DioJoestar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Portfolio</h1>
-      <h2 class="project-tagline">Personal portfolio</h2>
-      <a href="https://github.com/DioJoestar/Portfolio" class="btn">View on GitHub</a>
-      <a href="https://github.com/DioJoestar/Portfolio/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/DioJoestar/Portfolio/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<!doctype html>
+<html>
+<head>
+	<title>Dio Joestar PORTFOLIO</title>
+	<meta property="og:title" content="Dio Joestar PORTFOLIO" />
+	<meta property="og:site_name" content="Dio Joestar PORTFOLIO"/>
+	<meta property="og:description" content="Raúl 'Dio Joestar' Jiménez PORTFOLIO" />
+	<meta property="og:image" content="img/avatar.png" />	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div id="avatar"/></div>
+		<h1>Raúl 'Dio Joestar' Jiménez <span style="color:#ebc055; font-weight:bold;">PORTFOLIO</span></h1>
+	</header>
+	<div id="menu">
+		<a href="#Main"><div id="menu_main">Main</div></a>
+		<a href="#RETF2"><div id="menu_RETF2">RETF2</div></a>
+		<a href="#OnlineSDK"><div id="menu_onlinesdk">OnlineSDK</div></a>
+		<a href="#SteamCMD-GUI"><div id="menu_steamcmd-gui">SteamCMD GUI</div></a>
+		<a href="#Gallery"><div id="menu_works">Other Works</div></a>
+		<a href="#Contact"><div id="menu_contact">Contact</div></a>
+	</div>
+	<section id="Main">
+		<article>
+			<a href="#Main"><h1>TRINE FEDEA DE NUEVO</h1></a>
+			<hr />
+			<p>TRINE vuelve a las andadas tras fedear de nuevo en Dota 2.</p>  
+		</article>
+	</section>	
+	<section id="RETF2">
+		<article>
+			<a href="#RETF2"><h1>RETF2</h1></a>
+			<hr />
+			<input type="checkbox" id="checkbox">
+			<br>
+			<div id="A" style="">
+				<p>In July 2014, I was a member of the crew <a href="http://badwolfserver.es/" target="blank_">Bad Wolf team</a> who organized the <a href="http://comp.RETF2.org/retrospective1/" target="blank_">Retrospective event</a> at the <a href="http://www.euskal.org/" target="blank_">Euskal Encounter 22 LAN party</a> in Bilbao, Spain.</p>
+				<br />
+				<p>With two other friends, we designed, modeled, textured, and rigged two medals for the Team Fortress 2 video game, one as a winner prize and other for the participants. <a href="http://www.teamfortress.com/post.php?id=13964" target="blank_">Both of them were added to the game by VALVE</a>.</p>
+				<div class="gallery-container-small">
+					<ul>
+						<li><a title="Render with Source Filmmaker" href="#RETF2" onclick="document.getElementById('RETF2').className='render'"><div class="img-small" style="background: url(img/ee22/RETF2_soldier.png);"></div></a></li>
+						<li><a title="The medals in HLMV" href="#RETF2" onclick="document.getElementById('RETF2').className='medals'"><div class="img-small" style="background: url(img/ee22/hlmv_medals.png);"></div></a></li>
+						<li><a title="Concept art by Juan Armen" href="#RETF2" onclick="document.getElementById('RETF2').className='concept_art'"><div class="img-small" style="background: url(img/ee22/concept_art_ee22_medal.png);"></div></a></li>
+						<li><a title="A player wearing the medal" href="#RETF2" onclick="document.getElementById('RETF2').className='ingame'"><div class="img-small" style="background: url(img/ee22/ingame_screenshot.png);"></div></a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div id="B" style="">
+				<p>At 2015 <a href="http://www.teamfortress.com/post.php?id=17410">we did it again</a>, this time with support from <a href="http://www.extelevision.com/">eXtelevision</a>. The Retrospective 2 tournament had over 2300 participants in a total of 5 formats (Highlander, 6v6, RSP, Arena respawn, and Ultiduo).</p>
+			</div>
+			<label for="checkbox" class="scrollbutton"></label>
+		</article>
+	</section>
+	<section id="OnlineSDK">
+		<article>
+			<a href="#OnlineSDK"><h1>OnlineSDK</h1></a>
+			<hr />
+			<p>Name shortened from <a href="http://onlinesdk.webege.com/" target="blank_">Spanish Development Kit</a>, it was a spanish project, made from scratch, focused on teaching or expand their knowledge in the creation and modification on content related to the game engine of Half-Life 2, the Source engine.</p> 
+			<br />
+			<p>It was born as a site where I could share my documentation about modding and a way for learn HTML, CSS, and PHP on my way.</p>
+			<br />
+			<p>Right now it's only an abandoned project.</p>
+			<img style="pointer-events:none" src="img/man.svg"></img>
+		</article>		
+		<iframe src="http://onlinesdk.webege.com" scrolling="left">
+				<p>Your browser does not support iframes. <a href="http://onlinesdk.webege.com">Click here</a>.</p>
+				<a href="http://onlinesdk.webege.com">Click here</a>.</p>
+		</iframe>
+	</section>
+	<section id="SteamCMD-GUI">
+		<article>
+			<a href="#SteamCMD-GUI"><h2>SteamCMD GUI</h2></a>
+			<hr />
+		</article>
+	</section>
+	<section id="Gallery">		
+		<div class="gallery-container">
+			<a href="#Gallery"><h1 class="other">Other Works</h1></a>
+			<hr />
+			<ul>
+				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=679240865"><div class="img" style="background: url(img/gallery/bidecoder.jpg)"></div></a></li>
+				<li><a target="_blank" href="https://sketchfab.com/models/7325a646b5e54fa48f976c75ca281700"><div class="img" style="background: url(img/gallery/M515_jeep.png)"></div></a></li>
+				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=438542671"><div class="img" style="background: url(img/gallery/model_tf2_the_drunk_grail.png)"></div></a></li>
+				<li><a target="_blank" href="img/gallery/model_tf2_snowmann.png"><div class="img" style="background: url(img/gallery/model_tf2_snowmann.png)"></div></a></li>
+				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=379174656"><div class="img" style="background: url(img/gallery/model_tf2_hale_coin.jpg)"></div></a></li>
+				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=383860270"><div class="img" style="background: url(img/gallery/model_tf2_iron_cross.jpg)"></div></a></li>
+				<li><a target="_blank" href="http://dio-joestar.deviantart.com/art/Demoman-512882327"><div class="img" style="background: url(img/gallery/w_cyclops_visor.png)"></div></a></li>
+				<li><a target="_blank" href="http://dio-joestar.deviantart.com/art/JoJo-s-Bizarre-Adventure-Killer-Queen-519590836"><div class="img" style="background: url(img/gallery/w_killer_queen.png)"></div></a></li>
+				<li><a target="_blank" href="http://tf2.gamebanana.com/skins/131811"><div class="img" style="background: url(img/gallery/demoman_hd.png)"></div></a></li>
+				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=473320009"><div class="img" style="background: url(img/gallery/tf2_trade_stardust_map.jpg)"></div></a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+	</section>
+	<section id="Contact">
+		<a href="#Contact"><h1 class="contact">Contact</h1></a>
+		<div class="socialmedia"></div>
+	</section>
+	<section id="Footer">
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/DioJoestar/Portfolio">Portfolio</a> is maintained by <a href="https://github.com/DioJoestar">DioJoestar</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+	</section>
+</body>
 </html>
