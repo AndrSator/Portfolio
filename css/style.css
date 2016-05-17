@@ -13,8 +13,13 @@ body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf}
 p		{line-height:1.6;}
 hr		{border-style: solid; border-color:#bfbfbf;}
 
-header		{height:216px; background-color:#2d2d2d}
+header		{height:216px; background-color: rgba(0,0,0,.5);}
 header img	{float:left; margin:14px; margin-left: 100px;}
+
+#video {
+	position: absolute;
+	z-index: -1;
+}
 
 #avatar	{
 	height: 144px;
@@ -25,7 +30,12 @@ header img	{float:left; margin:14px; margin-left: 100px;}
 	margin: 36px 72px 36px 72px;
 }
 
-header h1		{margin-left:252px; float:left; font-size:20px; line-height:100px;}
+header h1		{
+	margin-left:252px;
+	float:left;
+	font-size:20px;
+	line-height:100px;
+}
 
 section	{
 	position: relative;
@@ -41,7 +51,7 @@ a						{color:#bfbfbf; text-decoration:none;}
 section h1, section h1>a	{width:300px; font-size:65px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section p					{color:#4f4f4f; width:300px;}
-section article				{position:relative; width:300px; height:100%; z-index:4; float:left;}
+section article				{position:relative; width:300px; height:100%; z-index:4;}
 section article p			{text-align: justify;}
 
 #menu {
