@@ -160,7 +160,7 @@ label.scrollbutton:hover {
 	padding: 100px 190px 100px 190px;
 }
 
-div ul {	background-color: rgba(216,216,216,.25);}
+#Gallery div ul {	background-color: rgba(216,216,216,.25);}
  
 div.img {
 	float: left;
