@@ -158,17 +158,34 @@ label.scrollbutton:hover {
 #Gallery {
 	background: #b4b4b4;
 	padding: 100px 190px 100px 190px;
+	height: inherit;
+	min-height: 800px;
 }
 
 #Gallery div ul {	background-color: rgba(216,216,216,.25);}
  
+.wrap {
+	float:left;
+	width: 25%;
+	display: inline-block;
+	position: relative;
+}
+
+.wrap:after {
+	/* 16:9 aspect ratio */
+	padding-top: 56.25%;
+	display: block;
+	content: '';
+}
+
 div.img {
-	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 	margin: 10px;
-	width: 360px;
-	height: 200px;
 	background-size: 100% !IMPORTANT;
-	background-size: cover;
 }
 
 #Contact {
