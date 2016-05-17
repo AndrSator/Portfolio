@@ -227,7 +227,7 @@ iframe {
 	z-index: 1;
 }
 
-.render			{background : url(../img/ee22/retf2_soldier.png) fixed !IMPORTANT;}
-.concept_art	{background : url(../img/ee22/concept_art_ee22_medal.png) fixed !IMPORTANT;}
-.medals			{background : url(../img/ee22/hlmv_medals.png) fixed !IMPORTANT;}
-.ingame			{background : url(../img/ee22/ingame_screenshot.png) fixed !IMPORTANT;}
+.render			{background : url(../img/ee22/retf2_soldier.png) fixed !IMPORTANT; background-size:cover;}
+.concept_art		{background : url(../img/ee22/concept_art_ee22_medal.png) fixed !IMPORTANT; background-size:cover;}
+.medals			{background : url(../img/ee22/hlmv_medals.png) fixed !IMPORTANT; background-size:cover;}
+.ingame			{background : url(../img/ee22/ingame_screenshot.png) fixed !IMPORTANT; background-size:cover;}
