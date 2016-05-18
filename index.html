@@ -10,9 +10,13 @@
 </head>
 <body>
 	<header>
-		<video autoplay loop id="video"><source type="video/webm" src="img/banner_video.webm"></video>
-		<div id="avatar"/></div>
-		<h1>Raúl 'Dio Joestar' Jiménez <span style="color:#ebc055; font-weight:bold;">PORTFOLIO</span></h1>
+		<video autoplay loop id="video">
+			<source type="video/webm" src="img/banner_video.webm">
+		</video>
+		<div class="header">
+			<div id="avatar"/></div>
+			<h1>Raúl 'Dio Joestar' Jiménez <span style="color:#ebc055; font-weight:bold;">PORTFOLIO</span></h1>
+		</div>
 	</header>
 	<div id="menu">
 		<a href="#"><div id="menu_main">Main</div></a>
@@ -41,10 +45,10 @@
 				<p>With two other friends, we designed, modeled, textured, and rigged two medals for the Team Fortress 2 video game, one as a winner prize and other for the participants. <a href="http://www.teamfortress.com/post.php?id=13964" target="blank_">Both of them were added to the game by VALVE</a>.</p>
 				<div class="gallery-container">
 					<ul>
-						<li><a title="Render with Source Filmmaker" href="#RETF2" onclick="document.getElementById('RETF2').className='render background'"><div class="img-small" style="background: url(img/ee22/retf2_soldier.png);"></div></a></li>
-						<li><a title="The medals in HLMV" href="#RETF2" onclick="document.getElementById('RETF2').className='medals background'"><div class="img-small" style="background: url(img/ee22/hlmv_medals.png);"></div></a></li>
-						<li><a title="Concept art by Juan Armen" href="#RETF2" onclick="document.getElementById('RETF2').className='concept_art background'"><div class="img-small" style="background: url(img/ee22/concept_art_ee22_medal.png);"></div></a></li>
-						<li><a title="A player wearing the medal" href="#RETF2" onclick="document.getElementById('RETF2').className='ingame background'"><div class="img-small" style="background: url(img/ee22/ingame_screenshot.png);"></div></a></li>
+						<li><a title="Render with Source Filmmaker" href="#RETF2" onclick="document.getElementById('RETF2').className='render background'"><div class="img-small clickable" style="background: url(img/ee22/retf2_soldier.png);"></div></a></li>
+						<li><a title="The medals in HLMV" href="#RETF2" onclick="document.getElementById('RETF2').className='medals background'"><div class="img-small clickable" style="background: url(img/ee22/hlmv_medals.png);"></div></a></li>
+						<li><a title="Concept art by Juan Armen" href="#RETF2" onclick="document.getElementById('RETF2').className='concept_art background'"><div class="img-small clickable" style="background: url(img/ee22/concept_art_ee22_medal.png);"></div></a></li>
+						<li><a title="A player wearing the medal" href="#RETF2" onclick="document.getElementById('RETF2').className='ingame background'"><div class="img-small clickable" style="background: url(img/ee22/ingame_screenshot.png);"></div></a></li>
 						<div style="clear: both;"></div>
 					</ul>
 				</div>
@@ -82,17 +86,17 @@
 			<a href="#Gallery"><h1 class="other">Other Works</h1></a>
 			<hr />
 			<ul>
-				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=679240865"><div class="wrap"><div class="img" style="background: url(img/gallery/bidecoder.jpg)"></div></div></a></li>
-				<li><a target="_blank" href="https://sketchfab.com/models/7325a646b5e54fa48f976c75ca281700"><div class="wrap"><div class="img" style="background: url(img/gallery/M515_jeep.png)"></div></div></a></li>
-				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=438542671"><div class="wrap"><div class="img" style="background: url(img/gallery/model_tf2_the_drunk_grail.png)"></div></div></a></li>
-			<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=686543412"><div class="wrap"><div class="img" style="background: url(img/gallery/arcade.jpg)"></div></div></a></li>
-				<li><a target="_blank" href="img/gallery/model_tf2_snowmann.png"><div class="wrap"><div class="img" style="background: url(img/gallery/model_tf2_snowmann.png)"></div></div></a></li>
-				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=379174656"><div class="wrap"><div class="img" style="background: url(img/gallery/model_tf2_hale_coin.jpg)"></div></div></a></li>
-				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=383860270"><div class="wrap"><div class="img" style="background: url(img/gallery/model_tf2_iron_cross.jpg)"></div></div></a></li>
-				<li><a target="_blank" href="http://dio-joestar.deviantart.com/art/Demoman-512882327"><div class="wrap"><div class="img" style="background: url(img/gallery/w_cyclops_visor.png)"></div></div></a></li>
-				<li><a target="_blank" href="http://dio-joestar.deviantart.com/art/JoJo-s-Bizarre-Adventure-Killer-Queen-519590836"><div class="wrap"><div class="img" style="background: url(img/gallery/w_killer_queen.png)"></div></div></a></li>
-				<li><a target="_blank" href="http://tf2.gamebanana.com/skins/131811"><div class="wrap"><div class="img" style="background: url(img/gallery/demoman_hd.png)"></div></div></a></li>
-				<li><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=473320009"><div class="wrap"><div class="img" style="background: url(img/gallery/tf2_trade_stardust_map.jpg)"></div></div></a></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=679240865"><div class="img clickable" style="background: url(img/gallery/bidecoder.jpg)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="https://sketchfab.com/models/7325a646b5e54fa48f976c75ca281700"><div class="img clickable" style="background: url(img/gallery/M515_jeep.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=438542671"><div class="img clickable" style="background: url(img/gallery/model_tf2_the_drunk_grail.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=686543412"><div class="img clickable" style="background: url(img/gallery/arcade.jpg)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="img/gallery/model_tf2_snowmann.png"><div class="img clickable" style="background: url(img/gallery/model_tf2_snowmann.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=379174656"><div class="img clickable" style="background: url(img/gallery/model_tf2_hale_coin.jpg)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=383860270"><div class="img clickable" style="background: url(img/gallery/model_tf2_iron_cross.jpg)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://dio-joestar.deviantart.com/art/Demoman-512882327"><div class="img clickable" style="background: url(img/gallery/w_cyclops_visor.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://dio-joestar.deviantart.com/art/JoJo-s-Bizarre-Adventure-Killer-Queen-519590836"><div class="img clickable" style="background: url(img/gallery/w_killer_queen.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://tf2.gamebanana.com/skins/131811"><div class="img clickable" style="background: url(img/gallery/demoman_hd.png)"></div></a></div></li>
+				<li><div class="wrap"><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=473320009"><div class="img clickable" style="background: url(img/gallery/tf2_trade_stardust_map.jpg)"></div></a></div></li>
 				<div style="clear: both;"></div>
 			</ul>
 		</div>
@@ -103,7 +107,11 @@
 		<div class="socialmedia"></div>
 	</section>
 	<section id="Footer">
+		<div class="foot">
+<pre style="width:100%" >Porforlio made by Raúl 'Dio Joestar' Jiménez, HTML and CSS only. Last update - 18 May, 2016
 
+	Source code @ <a href="https://github.com/DioJoestar/Portfolio">GitHub</a></pre>
+		</div>
 	</section>
 </body>
 </html>

@@ -9,11 +9,32 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 	src: url('nevis.ttf');
 }
 
+/* Variable Colors */
+:root {
+  --main-color: #ebc055;
+  --retf2-color: #bf3d3d;
+  --onlinesdk-color: #bfbfbf;
+  --steamcmd-color: #4078c0;
+}
+
 body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf}
 p		{line-height:1.6;}
 hr		{border-style: solid; border-color:#bfbfbf;}
 
-header		{height:216px; background-color: rgba(0,0,0,.5);}
+header {
+	background-color: rgba(0,0,0,.25);
+	height: 216px;
+}
+
+.header {
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	height: 144px;
+	width: 650px;
+	margin: 26px 62px 26px 62px;
+	padding: 10px;
+}
+
 header img	{float:left; margin:14px; margin-left: 100px;}
 
 #video {
@@ -27,14 +48,13 @@ header img	{float:left; margin:14px; margin-left: 100px;}
 	background: url(../img/avatar.png);
 	background-size: cover;
 	position: absolute;
-	margin: 36px 72px 36px 72px;
 }
 
 header h1		{
-	margin-left:252px;
-	float:left;
-	font-size:20px;
-	line-height:100px;
+	margin-left: 180px;
+	float: left;
+	font-size: 20px;
+	line-height: 100px;
 }
 
 section	{
@@ -53,6 +73,13 @@ section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; mar
 section p					{color:#4f4f4f; width:300px;}
 section article				{position:relative; width:300px; height:100%; z-index:4;}
 section article p			{text-align: justify;}
+
+a div.clickable:hover {
+	border-bottom: 4px solid #ebc055;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 #menu {
     position: fixed;
@@ -82,10 +109,10 @@ section article p			{text-align: justify;}
 	line-height: 64px !IMPORTANT;
 }
 
-#menu #menu_main:hover{border-color:#ebc055}
-#menu #menu_RETF2:hover{border-color:#bf3d3d}
-#menu #menu_onlinesdk:hover{border-color:#bfbfbf}
-#menu #menu_steamcmd-gui:hover{border-color: #4078c0}
+#menu #menu_main:hover{border-color: var(--main-color);}
+#menu #menu_RETF2:hover{border-color: var(--retf2-color);}
+#menu #menu_onlinesdk:hover{border-color: var(--onlinesdk-color:);}
+#menu #menu_steamcmd-gui:hover{border-color: var(--steamcmd-color);}
 #menu #menu_works:hover{border-color:}
 #menu #menu_contact:hover{border-color:}
 
@@ -114,6 +141,10 @@ section article p			{text-align: justify;}
 	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+#RETF2 a div.clickable:hover {
+	border-color: var(--retf2-color);
 }
 
 div.gallery-container {
@@ -176,7 +207,7 @@ label.scrollbutton:hover {
 #Gallery div ul {	background-color: rgba(216,216,216,.25);}
  
 .wrap {
-	float:left;
+	float: left;
 	width: 25%;
 	display: inline-block;
 	position: relative;
@@ -189,13 +220,13 @@ label.scrollbutton:hover {
 	content: '';
 }
 
-div.img {
+.img {
 	position: absolute;
+	margin: 10px;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	margin: 10px;
 	background-size: 100% !IMPORTANT;
 }
 
@@ -219,9 +250,16 @@ div.img {
 
 #Footer {
 	background-color: rgba(0,0,0,.25);
-	padding: 0;
-	height: 90px !IMPORTANT;
+	padding: 25px;
+	height: 40px !IMPORTANT;
 }
+
+#Footer pre {
+	font-style: italic;
+	color: #4f4f4f;
+}
+
+#Footer a {color:#020202;}
 
 div.img-small {
 	float: left;
