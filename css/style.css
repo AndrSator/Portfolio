@@ -11,10 +11,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 
 /* Variable Colors */
 :root {
-  --main-color: #ebc055;
-  --retf2-color: #bf3d3d;
-  --onlinesdk-color: #bfbfbf;
-  --steamcmd-color: #4078c0;
+	--main-color: #ebc055;
+	--main-color2: #ffd05c;
+	--retf2-color: #bf3d3d;
+	--retf2-color2: #ff5151;
+	--onlinesdk-color: #bfbfbf;
+	--onlinesdk-color2: #e8e8e8;
+	--steamcmd-color: #85bbff;
+	--steamcmd-color2: #b2d4ff;
+}
+
+*::selection {
+	background: rgba(0, 0, 0, 0);
+	color: #030303;
+}
+
+a::selection {
+	background: rgba(0, 0, 0, 0);
+	color: var(--main-color);
 }
 
 body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf}
@@ -22,8 +36,19 @@ p		{line-height:1.6;}
 hr		{border-style: solid; border-color:#bfbfbf;}
 
 header {
-	background-color: rgba(0,0,0,.25);
+	background-color: black;
 	height: 216px;
+	z-index: -2;
+}
+
+#video {
+	position: absolute;
+	opacity: .75;
+	-webkit-filter:blur(2px);
+	-ms-filter: blur(2px);
+	-o-filter: blur(2px);
+	filter: blur(2px);
+	z-index: 1;
 }
 
 .header {
@@ -33,14 +58,10 @@ header {
 	width: 650px;
 	margin: 26px 62px 26px 62px;
 	padding: 10px;
+	z-index: 2;
 }
 
 header img	{float:left; margin:14px; margin-left: 100px;}
-
-#video {
-	position: absolute;
-	z-index: -1;
-}
 
 #avatar	{
 	height: 144px;
@@ -54,7 +75,7 @@ header h1		{
 	margin-left: 180px;
 	float: left;
 	font-size: 20px;
-	line-height: 100px;
+	line-height: 50px;
 }
 
 section	{
@@ -68,8 +89,8 @@ section	{
 section.background		{background-size:cover !IMPORTANT;}
 
 a						{color:#bfbfbf; text-decoration:none;}
-section h1, section h1>a	{width:300px; font-size:65px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
-section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h1, section h1>a	{width:300px; font-size:3vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h2, section h2>a	{width:300px; font-size:2vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section p					{color:#4f4f4f; width:300px;}
 section article				{position:relative; width:300px; height:100%; z-index:4;}
 section article p			{text-align: justify;}
@@ -79,6 +100,10 @@ a div.clickable:hover {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	transition: 0.15s;
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-o-transition: 0.15s;
 }
 
 #menu {
@@ -102,7 +127,7 @@ a div.clickable:hover {
 	border-left: 4px solid #494949;
 }
 
-#menu div:hover{
+#menu div:hover {
 	width: 120px;
 	color: #bfbfbf;
 	font: 18px bold, Arial;
@@ -111,7 +136,7 @@ a div.clickable:hover {
 
 #menu #menu_main:hover{border-color: var(--main-color);}
 #menu #menu_RETF2:hover{border-color: var(--retf2-color);}
-#menu #menu_onlinesdk:hover{border-color: var(--onlinesdk-color:);}
+#menu #menu_onlinesdk:hover{border-color: var(--onlinesdk-color);}
 #menu #menu_steamcmd-gui:hover{border-color: var(--steamcmd-color);}
 #menu #menu_works:hover{border-color:}
 #menu #menu_contact:hover{border-color:}
@@ -143,6 +168,16 @@ a div.clickable:hover {
 	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 }
 
+#RETF2 p	 {color: #c0c0c0;}
+
+#RETF2 a {
+	color: var(--retf2-color);
+}
+
+#RETF2 a:hover {
+	color: var(--retf2-color2);
+}
+
 #RETF2 a div.clickable:hover {
 	border-color: var(--retf2-color);
 }
@@ -153,10 +188,6 @@ div.gallery-container {
 	margin: 12px 0px 0px 0px;
 	padding: 4px;
 }
-
-section#RETF2 a h1		{color: #bfbfbf;}
-section#RETF2 a		{color: #bf3d3d;}
-section#RETF2 p		{color: #c0c0c0;}
 
 /* Switch */
 input#checkbox {display: none}
@@ -193,8 +224,40 @@ label.scrollbutton:hover {
 	box-shadow: inset 500px 0px 0px 0px #1c1c1c;
 }
 
+#OnlineSDK a {
+	color: var(--onlinesdk-color);
+}
+
+#OnlineSDK a:hover {
+	color: var(--onlinesdk-color2);
+}
+
 #SteamCMD-GUI {
-	background: #9c9c9c;
+	background: #a5a5a5;
+	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
+}
+
+#SteamCMD-GUI p, #SteamCMD-GUI a h2 {color: #cdcdcd}
+
+#SteamCMD-GUI a {
+	color: var(--steamcmd-color);
+}
+
+#SteamCMD-GUI a:hover {
+	color: var(--steamcmd-color2);
+}
+
+.prompt {
+    border-left: .1em solid;
+    -webkit-animation: blinking 1s step-end infinite;
+    animation: blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #cdcdcd; }
 }
 
 #Gallery {
@@ -202,6 +265,11 @@ label.scrollbutton:hover {
 	padding: 100px 190px 100px 190px;
 	height: inherit;
 	min-height: 800px;
+}
+
+#Gallery h1 {
+	color: #d8d8d8 !IMPORTANt;
+	width:100%;
 }
 
 #Gallery div ul {	background-color: rgba(216,216,216,.25);}
@@ -269,10 +337,7 @@ div.img-small {
 	background-size: 100% !IMPORTANT;
 }
 
-.other {
-	color: #d8d8d8;
-	width:100%;
-}
+section a h1	{color: #bfbfbf !IMPORTANT;}
 
 iframe {
 	position: absolute;
