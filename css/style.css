@@ -234,9 +234,17 @@ label.scrollbutton:hover {
 
 #SteamCMD-GUI {
 	background: #a5a5a5;
-	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
-	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
-	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.3);
+}
+
+#SteamCMD-GUI .container {
+	position: relative;
+	background-color: rgba(0,0,0,0.3);
+	width: 300px;
+	height: 100%;
+	margin: -100px;
+	padding: 100px;
+	pointer-events: none;
+	z-index: 1;
 }
 
 #SteamCMD-GUI p, #SteamCMD-GUI a h2 {color: #cdcdcd}
@@ -248,6 +256,26 @@ label.scrollbutton:hover {
 #SteamCMD-GUI a:hover {
 	color: var(--steamcmd-color2);
 }
+
+.window {
+	position: absolute;
+	margin-top: -100px;
+	margin-left: -100px;
+	width: 100%;
+	height: 100%;	
+	z-index: 1;
+}
+
+.drag {
+	position: absolute;
+	cursor: move;
+	float: left
+}
+
+.screen1 {margin:10px 0px 0px 1000px}
+.screen2 {margin:250px 0px 0px 600px}
+.screen3 {margin:400px 0px 0px 100px; z-index: -1}
+.icon {margin:10px 0px 0px 520px; z-index: -1}
 
 .console {
 	font: 12px Lucida Console, Consolas;
