@@ -66,7 +66,7 @@ header img	{float:left; margin:14px; margin-left: 100px;}
 #avatar	{
 	height: 144px;
 	width: 144px;
-	background: url(../img/avatar.png);
+	background: url(../img/avatar.jpg);
 	background-size: cover;
 	position: absolute;
 }
@@ -145,7 +145,7 @@ a div.clickable:hover {
 
 #Main	{
 	background: #e0e0e0;
-	background: url(../img/background/asd.png) fixed;
+	background: url(../img/background/asd.jpg) fixed;
 	color: black;
 	height: 584px;
 	margin: 0;
@@ -158,7 +158,7 @@ a div.clickable:hover {
 }
 
 #RETF2	{
-	background: url(../img/ee22/retf2_soldier.png) fixed;
+	background: url(../img/ee22/retf2_soldier.jpg) fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -353,7 +353,7 @@ iframe {
 	z-index: 1;
 }
 
-.render			{background : url(../img/ee22/retf2_soldier.png) fixed !IMPORTANT;}
-.concept_art	{background : url(../img/ee22/concept_art_ee22_medal.png) fixed !IMPORTANT;}
-.medals			{background : url(../img/ee22/hlmv_medals.png) fixed !IMPORTANT;}
-.ingame			{background : url(../img/ee22/ingame_screenshot.png) fixed !IMPORTANT;}
+.render			{background : url(../img/ee22/retf2_soldier.jpg) fixed !IMPORTANT;}
+.concept_art	{background : url(../img/ee22/concept_art_ee22_medal.jpg) fixed !IMPORTANT;}
+.medals			{background : url(../img/ee22/hlmv_medals.jpg) fixed !IMPORTANT;}
+.ingame			{background : url(../img/ee22/ingame_screenshot.jpg) fixed !IMPORTANT;}
