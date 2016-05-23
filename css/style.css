@@ -249,8 +249,13 @@ label.scrollbutton:hover {
 	color: var(--steamcmd-color2);
 }
 
+.console {
+	font: 12px Lucida Console, Consolas;
+	text-align: left;
+}
+
 .prompt {
-    border-left: .1em solid;
+    border-bottom: 2.5px solid;
     -webkit-animation: blinking 1s step-end infinite;
     animation: blinking 1s step-end infinite;
 }
