@@ -15,7 +15,7 @@
 	<script type="text/javascript">
 	$(function() {
 		$( ".drag" ).draggable({containment: "parent", scroll: false, stack: ".drag"});
-		$( ".drag2" ).draggable({containment: "parent", scroll: false, grid: [ 80, 100 ], opacity: 0.7});
+		$( ".drag2" ).draggable({containment: "parent", grid: [ 80, 100 ], opacity: 0.7, scroll: true,});
 	});
 	</script>
 </head>
@@ -87,6 +87,7 @@
 		</article>		
 	</section>
 	<section id="SteamCMD-GUI">
+	
 		<div class="window">
 			<img src="img/steamcmd-gui/screen1.png" class="drag screen1"/>
 			<img src="img/steamcmd-gui/screen2.png" class="drag screen2"/>
@@ -94,18 +95,19 @@
 			<img src="img/steamcmd-gui/screen3.png" class="drag screen3"/>
 		</div>
 		<div class="container">
-		<article style="pointer-events:all">
-			<a href="#SteamCMD-GUI"><h2>SteamCMD GUI</h2></a>
-			<hr />
-			<p class="console">C:\Users\DioJoestar>type steamcmd-gui_desc.txt</p>
-			<p>Time ago I used to use <a href="http://tf2.gamebanana.com/tools/5303">batch scripts</a> for install and run game servers. Tired of navigating through a poor menu using the numbers, I made the next step, build a graphical interface. For that task I chose Visual Basic for start learning a new programing language.</p>
-			<br />
-			<p>Step by step, I build <a href="https://github.com/DioJoestar/SteamCMD-GUI">SteamCMD GUI</a>. As the name suggests, is a graphical interface for the <a href="https://developer.valvesoftware.com/wiki/SteamCMD">Steam Console Client</a> (SteamCMD), a command-line version of Steam for set up dedicated servers.</p>
-			<br />
-			<p>A lot of people contributed with this software making tutorials in different languages, helping with the code, providing feedback and ideas... even was recommended in <a href="http://www.pcgamer.com/dedicated-gaming-server/">PCGamer</a>.</p>
-			<br />		
-			<p class="console">C:\Users\DioJoestar><span class="prompt">&nbsp;</span></p>
-		</article>
+			<article>
+			
+				<a href="#SteamCMD-GUI"><h2>SteamCMD GUI</h2></a>
+				<hr />
+				<p class="console">C:\Users\DioJoestar>type steamcmd-gui_desc.txt</p>
+				<p>Time ago I used to use <a href="http://tf2.gamebanana.com/tools/5303">batch scripts</a> for install and run game servers. Tired of navigating through a poor menu using the numbers, I made the next step, build a graphical interface. For that task I chose Visual Basic for start learning a new programing language.</p>
+				<br />
+				<p>Step by step, I build <a href="https://github.com/DioJoestar/SteamCMD-GUI">SteamCMD GUI</a>. As the name suggests, is a graphical interface for the <a href="https://developer.valvesoftware.com/wiki/SteamCMD">Steam Console Client</a> (SteamCMD), a command-line version of Steam for set up dedicated servers.</p>
+				<br />
+				<p>A lot of people contributed with this software making tutorials in different languages, helping with the code, providing feedback and ideas... even was recommended in <a href="http://www.pcgamer.com/dedicated-gaming-server/">PCGamer</a>.</p>
+				<br />		
+				<p class="console">C:\Users\DioJoestar><span class="prompt">&nbsp;</span></p>
+			</article>
 		</div>
 	</section>
 	<section id="Gallery">		
@@ -135,7 +137,7 @@
 	</section>
 	<section id="Footer">
 		<div class="foot">
-<pre style="width:100%" >Porforlio made by Raúl 'Dio Joestar' Jiménez, HTML, CSS and jQuery only. Last update - 23 May, 2016
+<pre style="width:100%" >Porforlio made by Raúl 'Dio Joestar' Jiménez. Done with HTML, CSS and jQuery. Last update - 24 May, 2016
 
 	Source code @ <a href="https://github.com/DioJoestar/Portfolio">GitHub</a></pre>
 		</div>

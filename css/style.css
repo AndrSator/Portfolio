@@ -31,7 +31,7 @@ a::selection {
 	color: var(--main-color);
 }
 
-body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf}
+body	{font:13px/1.1 Helvetica,sans-serif; color:#bfbfbf; overflow-x:hidden}
 p		{line-height:1.6;}
 hr		{border-style: solid; border-color:#bfbfbf;}
 
@@ -92,7 +92,7 @@ a						{color:#bfbfbf; text-decoration:none;}
 section h1, section h1>a	{width:300px; font-size:3vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section h2, section h2>a	{width:300px; font-size:2vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section p					{color:#4f4f4f; width:300px;}
-section article				{position:relative; width:300px; height:100%; z-index:4;}
+section article				{position:relative; width:300px; z-index:3;}
 section article p			{text-align: justify;}
 
 a div.clickable:hover {
@@ -167,6 +167,8 @@ a div.clickable:hover {
 	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 }
+
+#RETF2 article {height:100%}
 
 #RETF2 p	 {color: #c0c0c0;}
 
@@ -247,15 +249,18 @@ label.scrollbutton:hover {
 	z-index: 1;
 }
 
+#SteamCMD-GUI article {
+	background-color: rgba(116, 116, 116, .8);
+	margin: -10px;
+	padding: 10px;
+	pointer-events: all;
+}
+
 #SteamCMD-GUI p, #SteamCMD-GUI a h2 {color: #cdcdcd}
 
-#SteamCMD-GUI a {
-	color: var(--steamcmd-color);
-}
+#SteamCMD-GUI a {color: var(--steamcmd-color);}
 
-#SteamCMD-GUI a:hover {
-	color: var(--steamcmd-color2);
-}
+#SteamCMD-GUI a:hover {color: var(--steamcmd-color2);}
 
 .window {
 	position: absolute;
@@ -274,8 +279,8 @@ label.scrollbutton:hover {
 
 .screen1 {margin:10px 0px 0px 1000px}
 .screen2 {margin:250px 0px 0px 600px}
-.screen3 {margin:400px 0px 0px 100px; z-index: -1}
-.icon {margin:10px 0px 0px 520px; z-index: -1}
+.screen3 {margin:400px 0px 0px 700px; z-index: -1}
+.icon {margin:10px 0px 0px 520px; z-index: -1; position:absolute !IMPORTANT}
 
 .console {
 	font: 12px Lucida Console, Consolas;
