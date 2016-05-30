@@ -44,11 +44,11 @@ header {
 #video {
 	position: absolute;
 	opacity: .75;
+	width: 100%;
 	-webkit-filter:blur(2px);
 	-ms-filter: blur(2px);
 	-o-filter: blur(2px);
 	filter: blur(2px);
-	z-index: 1;
 }
 
 .header {
@@ -89,8 +89,8 @@ section	{
 section.background		{background-size:cover !IMPORTANT;}
 
 a						{color:#bfbfbf; text-decoration:none;}
-section h1, section h1>a	{width:300px; font-size:3vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
-section h2, section h2>a	{width:300px; font-size:2vw; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h1, section h1>a	{width:300px; font-size:59px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section p					{color:#4f4f4f; width:300px;}
 section article				{position:relative; width:300px; z-index:3;}
 section article p			{text-align: justify;}
@@ -145,7 +145,6 @@ a div.clickable:hover {
 
 #Main	{
 	background: #e0e0e0;
-	background: url(../img/background/asd.jpg) fixed;
 	color: black;
 	height: 584px;
 	margin: 0;
@@ -155,6 +154,25 @@ a div.clickable:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+#Main article p {color:#BFBFBF}
+
+#Main div.container {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 400px;
+    width: 75%;
+    height: 100%;
+	padding: 100px;
+    z-index: 1;
+}
+
+#Main ol, #Main ul, #Main li {
+	padding-left: 25px;
 }
 
 #RETF2	{
