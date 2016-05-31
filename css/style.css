@@ -138,14 +138,13 @@ a div.clickable:hover {
 #menu #menu_RETF2:hover{border-color: var(--retf2-color);}
 #menu #menu_onlinesdk:hover{border-color: var(--onlinesdk-color);}
 #menu #menu_steamcmd-gui:hover{border-color: var(--steamcmd-color);}
-#menu #menu_works:hover{border-color:}
-#menu #menu_contact:hover{border-color:}
+#menu #menu_works:hover{border-color:var(--main-color)}
+#menu #menu_contact:hover{border-color:var(--main-color)}
 
 #menu_steamcmd-gui {font: 14px bold, Arial !IMPORTANT}
 
-#Main	{
-	background: #e0e0e0;
-	color: black;
+#Main {
+	background: #B3B3B3;
 	height: 584px;
 	margin: 0;
 	top: 0;
@@ -154,14 +153,17 @@ a div.clickable:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
-	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,.25);
+	-moz-box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,.25);
+	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,.25);
 }
 
-#Main article p {color:#BFBFBF}
+#Main article p {color:#cdcdcd}
+#Main article a {color:var(--main-color)}
+#Main article a:hover {color:var(--main-color2)}
 
-#Main div.container {
+#Main .container {
+	color: #cdcdcd;
     position: absolute;
     margin-top: -100px;
     margin-left: 400px;
@@ -171,9 +173,26 @@ a div.clickable:hover {
     z-index: 1;
 }
 
-#Main ol, #Main ul, #Main li {
-	padding-left: 25px;
+div.edu {
+	background-color: rgba(0,0,0,.25);
+	padding: 15px;
+	width: 620px;
 }
+
+.edu h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+.edu ul {padding-left:25px}
+
+.edu ul li {margin-top:.5em}
+
+.edu ul ul li {font-style:italic}
 
 #RETF2	{
 	background: url(../img/ee22/retf2_soldier.jpg) fixed;
@@ -244,6 +263,15 @@ label.scrollbutton:hover {
 	box-shadow: inset 500px 0px 0px 0px #1c1c1c;
 }
 
+#OnlineSDK iframe {
+	position: absolute;
+	margin-top: -100px;
+	margin-left: 400px;
+	width: 75%;
+	height: 100%;	
+	z-index: 1;
+}
+
 #OnlineSDK a {
 	color: var(--onlinesdk-color);
 }
@@ -258,7 +286,7 @@ label.scrollbutton:hover {
 
 #SteamCMD-GUI .container {
 	position: relative;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,.25);
 	width: 300px;
 	height: 100%;
 	margin: -100px;
@@ -268,7 +296,7 @@ label.scrollbutton:hover {
 }
 
 #SteamCMD-GUI article {
-	background-color: rgba(116, 116, 116, .8);
+	background-color: rgba(124, 124, 124,.8);
 	margin: -10px;
 	padding: 10px;
 	pointer-events: all;
@@ -383,7 +411,8 @@ label.scrollbutton:hover {
 	color: #4f4f4f;
 }
 
-#Footer a {color:#020202;}
+#Footer a {color:#353535}
+#Footer a:hover {color:#000}
 
 div.img-small {
 	float: left;
@@ -393,18 +422,4 @@ div.img-small {
 	background-size: 100% !IMPORTANT;
 }
 
-section a h1	{color: #bfbfbf !IMPORTANT;}
-
-iframe {
-	position: absolute;
-	margin-top: -100px;
-	margin-left: 400px;
-	width: 75%;
-	height: 100%;	
-	z-index: 1;
-}
-
-.render			{background : url(../img/ee22/retf2_soldier.jpg) fixed !IMPORTANT;}
-.concept_art	{background : url(../img/ee22/concept_art_ee22_medal.jpg) fixed !IMPORTANT;}
-.medals			{background : url(../img/ee22/hlmv_medals.jpg) fixed !IMPORTANT;}
-.ingame			{background : url(../img/ee22/ingame_screenshot.jpg) fixed !IMPORTANT;}
+section a h1	{color: #bfbfbf !IMPORTANT}
