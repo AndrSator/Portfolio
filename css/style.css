@@ -363,6 +363,7 @@ label.scrollbutton:hover {
 	width: 25%;
 	display: inline-block;
 	position: relative;
+	transition: width .5s;
 }
 
 .wrap:after {
