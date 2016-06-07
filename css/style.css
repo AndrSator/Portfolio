@@ -88,13 +88,6 @@ section	{
 
 section.background		{background-size:cover !IMPORTANT;}
 
-a						{color:#bfbfbf; text-decoration:none;}
-section h1, section h1>a	{width:300px; font-size:59px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
-section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
-section p					{color:#4f4f4f; width:300px;}
-section article				{position:relative; width:300px; z-index:3;}
-section article p			{text-align: justify;}
-
 a div.clickable:hover {
 	border-bottom: 4px solid #ebc055;
 	-moz-box-sizing: border-box;
@@ -144,7 +137,8 @@ a div.clickable:hover {
 #menu_steamcmd-gui {font: 14px bold, Arial !IMPORTANT}
 
 #Main {
-	background: #B3B3B3;
+	color: #cdcdcd;
+	background: #868686;
 	height: 584px;
 	margin: 0;
 	top: 0;
@@ -163,20 +157,23 @@ a div.clickable:hover {
 #Main article a:hover {color:var(--main-color2)}
 
 #Main .container {
-	color: #cdcdcd;
     position: absolute;
     margin-top: -100px;
     margin-left: 400px;
-    width: 75%;
-    height: 100%;
+    width: 1203px;
+    height: 584px;
 	padding: 100px;
     z-index: 1;
+}
+
+#Main p {
+	color: #cdcdcd;
 }
 
 div.edu {
 	background-color: rgba(0,0,0,.25);
 	padding: 15px;
-	width: 620px;
+	margin:10px;
 }
 
 .edu h3 {
@@ -423,4 +420,11 @@ div.img-small {
 	background-size: 100% !IMPORTANT;
 }
 
-section a h1	{color: #bfbfbf !IMPORTANT}
+/* Default */
+section a h1				{color: #bfbfbf !IMPORTANT}
+a						{color:#bfbfbf; text-decoration:none;}
+section h1, section h1>a	{width:300px; font-size:59px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
+section p					{color:#4f4f4f}
+section article				{position:relative; width:300px; z-index:3;}
+section article p			{text-align: justify}
