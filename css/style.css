@@ -195,7 +195,8 @@ div.edu {
 .edu hr {border-color: rgba(0,0,0,0)}
 
 #RETF2	{
-	background: url(../img/ee22/retf2_soldier.jpg) fixed;
+	background-image: url(../img/ee22/retf2_soldier.jpg);
+	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -227,6 +228,11 @@ div.gallery-container {
 	margin: 12px 0px 0px 0px;
 	padding: 4px;
 }
+
+#RETF2.render		 {background-image: url(../img/ee22/retf2_soldier.jpg)}
+#RETF2.medals 		{background-image: url(../img/ee22/hlmv_medals.jpg)}
+#RETF2.concept_art	{background-image: url(../img/ee22/concept_art_ee22_medal.jpg)}
+#RETF2.ingame		{background-image: url(../img/ee22/ingame_screenshot.jpg)}						
 
 /* Switch */
 input#checkbox {display: none}
@@ -425,7 +431,7 @@ div.img-small {
 
 /* Default */
 section a h1				{color: #bfbfbf !IMPORTANT}
-a						{color:#bfbfbf; text-decoration:none;}
+a							{color:#bfbfbf; text-decoration:none;}
 section h1, section h1>a	{width:300px; font-size:59px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section h2, section h2>a	{width:300px; font-size:39px; font-family: 'Nevis'; margin-bottom:14px; text-decoration:none;}
 section p					{color:#4f4f4f}
