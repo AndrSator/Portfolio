@@ -206,7 +206,7 @@ div.edu {
 	box-shadow: inset 500px 0px 0px 0px rgba(0,0,0,0.5);
 }
 
-#RETF2 article {height:100%}
+#RETF2 article {height:100%; position: relative;}
 
 #RETF2 p	 {color: #c0c0c0;}
 
@@ -313,6 +313,8 @@ label.scrollbutton:hover {
 #SteamCMD-GUI a {color: var(--steamcmd-color);}
 
 #SteamCMD-GUI a:hover {color: var(--steamcmd-color2);}
+
+.man {pointer-events:none}
 
 .window {
 	position: absolute;
@@ -427,6 +429,41 @@ div.img-small {
 	width: 140px;
 	height: 78px;
 	background-size: 100% !IMPORTANT;
+}
+
+/* Mobile setting */
+@media screen and (max-width: 640px) and (orientation: landscape) {
+	body {zoom:50%; font-size: 16px}
+	section {height: 522px}	
+	#Main .container { width: initial}
+	label.scrollbutton {bottom: -75px}
+	.man {width: 135%; margin: -100px 0 0 93px;}
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait) {
+	body {zoom:50%; font-size: 16px}
+	header {height: 190px;}
+	section article {width: unset !IMPORTANT;}
+	section {
+		height: 1000px !IMPORTANT;
+		-webkit-box-shadow: inset 750px 0px 0px 0px rgba(0,0,0,0.5) !IMPORTANT;
+		-moz-box-shadow: inset 750px 0px 0px 0px rgba(0,0,0,0.5) !IMPORTANT;
+		box-shadow: inset 750px 0px 0px 0px rgba(0,0,0,0.5) !IMPORTANT;
+	}
+	section#Main {height: 810px !IMPORTANT;}
+	.container, iframe {display:none}
+	#RETF2.render, #RETF2		{background-position-x: 1000px;}
+	#RETF2.medals 				{background-position: center}
+	#RETF2.concept_art			{background-position: center}
+	#RETF2.ingame				{background-position: center}
+	#SteamCMD-GUI .container	{display: contents;}
+	.console					{font-size: 16px;}
+	.icon						{margin: 30px 0px 0px 10px;}
+	.screen1 					{margin: 500px 0px 0px -400px;}
+	.screen2					{margin: 553px 0px 0px 223px;}
+	.screen3					{margin: 400px 0px 0px 400px;}
+	#Gallery					{padding: 100px;}
+	.wrap						{width: 50%;}
 }
 
 /* Default */
