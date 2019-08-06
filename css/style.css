@@ -13,6 +13,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 :root {
 	--main-color: #ebc055;
 	--main-color2: #ffd05c;
+	--secondary-color: #494949;
 	--retf2-color: #bf3d3d;
 	--retf2-color2: #ff5151;
 	--onlinesdk-color: #bfbfbf;
@@ -68,15 +69,23 @@ header img	{float:left; margin:14px; margin-left: 100px;}
 	width: 144px;
 	background: url(../img/avatar.jpg);
 	background-size: cover;
-	position: absolute;
+	float: left;
 }
 
 header h1		{
 	margin-left: 180px;
-	float: left;
 	font-size: 20px;
 	line-height: 50px;
 }
+
+.headerContent {
+    padding: 0 1em 0 1em;
+    margin-left: 144px;
+    font-size: 15px;
+}
+
+.headerContent li {	padding: .2em 0 .2em 0;}
+.headerContent a {color:var(--main-color2);}
 
 section	{
 	position: relative;
@@ -86,7 +95,10 @@ section	{
 	overflow:hidden;
 }
 
-section.background		{background-size:cover !IMPORTANT;}
+section.background		{
+	background-size:cover !IMPORTANT;
+    background-position: right;
+}
 
 a div.clickable:hover {
 	border-bottom: 4px solid #ebc055;
@@ -107,7 +119,7 @@ a div.clickable:hover {
 	z-index: 10;
 }
 
-#menu div{
+#menu div {
 	background: rgba(0,0,0,.25);
 	height: 64px;
 	width: 45px;
@@ -117,7 +129,6 @@ a div.clickable:hover {
 	vertical-align: middle;
 	white-space: nowrap;
 	transition: width .5s;
-	border-left: 4px solid #494949;
 }
 
 #menu div:hover {
@@ -168,6 +179,10 @@ a div.clickable:hover {
 
 #Main p {
 	color: #cdcdcd;
+}
+
+#menu div, .edu {
+	border-left: 4px solid var(--secondary-color);
 }
 
 div.edu {
@@ -232,17 +247,22 @@ div.gallery-container {
 #RETF2.render		 {background-image: url(../img/ee22/retf2_soldier.jpg)}
 #RETF2.medals 		{background-image: url(../img/ee22/hlmv_medals.jpg)}
 #RETF2.concept_art	{background-image: url(../img/ee22/concept_art_ee22_medal.jpg)}
-#RETF2.ingame		{background-image: url(../img/ee22/ingame_screenshot.jpg)}						
+#RETF2.ingame		{background-image: url(../img/ee22/ingame_screenshot.jpg)}
+
+#RETF2.retros1		 {background-image: url(../img/ee22/retrospective_winner.jpg)}
+#RETF2.retros2 		{background-image: url(../img/ee22/retrospective_participant.jpg)}
+#RETF2.concept_art2	{background-image: url(../img/ee22/retf2_concept.jpg)}
+				
 
 /* Switch */
 input#checkbox {display: none}
 input#checkbox:checked ~ div#A					{display:none}
 input#checkbox:checked ~ div#B					{display:block}
-input#checkbox:checked ~ label.scrollbutton	{border-top: 4px solid #494949}
+input#checkbox:checked ~ label.scrollbutton	{border-top: 4px solid var(--secondary-color)}
 
 input#checkbox:not(:checked) ~ div#A				{display:block}
 input#checkbox:not(:checked) ~ div#B				{display:none}
-input#checkbox:not(:checked) ~ label.scrollbutton 	{border-bottom: 4px solid #494949}
+input#checkbox:not(:checked) ~ label.scrollbutton 	{border-bottom: 4px solid var(--secondary-color)}
 
 label.scrollbutton {
 	position: absolute;
@@ -258,6 +278,26 @@ label.scrollbutton:hover {
 	border-color: #bf3d3d !IMPORTANT;
 }
 
+#JoJoSS {
+	background: url(../img/Jojobackground.png);
+	background-position-x: 20px;
+}
+
+#JoJoSS article {
+		background: white;
+		border: 1px solid #c5af7f !IMPORTANT;
+		margin: -25px;
+		margin-top: 0;
+		padding: 25px;
+}
+
+#JoJoSS h1 {color:black}
+
+	
+
+#JoJoSS *	{color: black !IMPORTANT}
+#JoJoSS a {color: #a99577 !IMPORTANT}
+
 #OnlineSDK	{
 	background-color: #101010;
 	-webkit-background-size:cover;
@@ -269,7 +309,7 @@ label.scrollbutton:hover {
 	box-shadow: inset 500px 0px 0px 0px #1c1c1c;
 }
 
-#OnlineSDK iframe {
+#OnlineSDK iframe, #JoJoSS iframe {
 	position: absolute;
 	margin-top: -100px;
 	margin-left: 400px;
@@ -389,6 +429,7 @@ label.scrollbutton:hover {
 	right: 0;
 	left: 0;
 	background-size: 100% !IMPORTANT;
+	background-position: center !IMPORTANT;
 }
 
 #Contact {
